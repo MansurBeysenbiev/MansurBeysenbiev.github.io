@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;  
+    background: linear-gradient(77deg, #43E694 0%, #0D9C9C 100%);
+}
+.nav-link {
+    color: bisque;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(136, 122, 104);
+}
+
+.navbar-brand img {
+    width: 40px;
+}
+
+.navbar-toggler {
+    background-color: rgb(136, 122, 104);
+}
+.sidebar {
+    color: bisque;
+    background: linear-gradient(277deg, #43E694 0%, #0D9C9C 100%);
+}
+.slide-text,
+.footer-text {
+    color: bisque;
+    margin: auto auto;
+}
+p {
+    color: bisque;
+}
+footer,
+.btn-outline-primary {
+    color: bisque;
+    background: linear-gradient(277deg, #43E694 0%, #0D9C9C 100%);
+}
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.call-anim {
+    animation: myAnim 2s ease 1s infinite normal none;
+}
+@keyframes myAnim {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: translateX(10px);
+	}
+
+	80% {
+		transform: translateX(8px);
+	}
+
+	90% {
+		transform: translateX(-8px);
+	}
+}
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display: none;
+    }
+}
